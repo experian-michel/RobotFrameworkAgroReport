@@ -1,0 +1,31 @@
+documento_produtor;nome_produtor;car;incra;geojson;nome_propriedade;instituicao_financeira;refbacen;cultura;safra;area_financiada_ha;volume_contratado;municipios_empreendimento;grupo_cultivar;tipo_solo;unidade_contrato;plantio_informado;colheita_informada
+111.111.111-11;MARIA SANTOS;GO-2345678-E22FF9A4A75344D3994CB002B90B6686;081201000071-76;"{
+  ""type"": ""MultiPolygon"",
+  ""coordinates"": [
+    [
+      [
+        [
+          -51.83531577514853,
+          -21.82407360011382
+        ],
+        [
+          -51.834392445954634,
+          -21.83291312767019
+        ],
+        [
+          -51.838367298222735,
+          -21.82954035303059
+        ],
+        [
+          -51.839130160444334,
+          -21.82425363300034
+        ],
+        [
+          -51.83531577514853,
+          -21.82407360011382
+        ]
+      ]
+    ]
+  ]
+}";FAZENDA Fiscalização por Sensoriamento Remoto;SAFRINHA;12345678911;SOJA;2023/2024;100;1000;GOIANIA (GO);GROUP I;AD1;TONS;20/10/2023;20/05/2024;
+Obrigatório;Obrigatório;Opcional;Opcional;Opcional;Obrigatório;Obrigatório;Obrigatório;Obrigatório;Obrigatório;Obrigatório;Opcional (Recomendado para calcular ZARC);Obrigatório;Opcional (Recomendado para calcular ZARC);Opcional (Recomendado para calcular ZARC);Opcional (Recomendado para calcular ZARC);Opcional (Recomendado para calcular ZARC);Opcional (Recomendado para calcular ZARC)

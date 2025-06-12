@@ -1,0 +1,30 @@
+documento_produtor;nome_produtor;car;incra;geojson;nome_propriedade;nome_instituicao;numero_contrato;cultura;safra;area_financiada_ha;produtividade_esperada;municipios_empreendimento;grupo_cultivar;tipo_solo;unidade_contrato;plantio_informado;colheita_informada
+013.858.471-07;MAISA RODRIGUES DA COSTA;SP-3506201-703DC091481E4EA5B32D9BD4A44F049C;;"{
+  ""type"": ""MultiPolygon"",
+  ""coordinates"": [
+    [
+      [
+        [
+          -51.83531577514853,
+          -21.82407360011382
+        ],
+        [
+          -51.834392445954634,
+          -21.83291312767019
+        ],
+        [
+          -51.838367298222735,
+          -21.82954035303059
+        ],
+        [
+          -51.839130160444334,
+          -21.82425363300034
+        ],
+        [
+          -51.83531577514853,
+          -21.82407360011382
+        ]
+      ]
+    ]
+  ]
+}";FAZENDA DOS DADOS;INSTITUIÇÃO DO QA;123456789012345;SOJA;2023/2024;100;1000;GOIANIA (GO);GROUP I;AD5;TONS;20/10/23;20/05/24

@@ -1,0 +1,28 @@
+1749758930573	geckodriver	INFO	Listening on 127.0.0.1:61466
+1749758930599	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Applications/Firefox. ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/bm/hz2c5r751_ld38q9x2hkllp00000gs/T/rust_mozprofileoo9IR7"
+console.error: Enterprise Policies: 
+  Invalid parameters specified for Proxy.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: Policies: 
+  Unable to find certificate - /Library/Experian/Certificates/McAfeeWebGateway.cer
+console.error: Policies: 
+  Unable to find certificate - /Library/Application Support/Mozilla/Certificates/McAfeeWebGateway.crt
+console.error: Policies: 
+  Unable to find certificate - /Library/Application Support/Mozilla/Certificates/ECS-ICAExperian Consumer Services ECD Enterprise Certificate Authority.cer
+console.error: Policies: 
+  Unable to find certificate - /Library/Application Support/Mozilla/Certificates/ECS-ICAExperian Consumer Services EXPN Enterprise Certificate Authority.cer
+console.error: Policies: 
+  Unable to find certificate - /Library/Application Support/Mozilla/Certificates/ECS-ROOTExperian Consumer Services Root Certificate Authority.cer
+1749758931188	Marionette	INFO	Marionette enabled
+1749758931574	Marionette	INFO	Listening on port 61472
+WebDriver BiDi listening on ws://127.0.0.1:61467
+JavaScript error: resource:///modules/policies/Policies.sys.mjs, line 1355: TypeError: cannot use 'in' operator to search for "installation_mod..." in "87677a2c52b84ad3..."
+Read port: 61472
+1749758931802	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://cdn.pendo.io/agent/static/4c6dab7e-9c4c-4ded-47a3-96832b0055ac/pendo.js, line 10: unreachable code after return statement
+JavaScript warning: https://dev-farmcheck.brainag.app/prefs_se.js, line 1822: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://static.zdassets.com/web_widget/messenger/latest/web-widget-main-c6569be.js, line 2: SecurityError: The operation is insecure.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

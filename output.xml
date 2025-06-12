@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.10.0 on darwin)" generated="2025-06-12T17:12:15.966815" rpa="false" schemaversion="5">
+<suite id="s1" name="Fiscalização por Sensoriamento Remoto" source="/Users/C12538Q/Documents/RobotFrameworkAgroReport/test/Fiscalização_por_Sensoriamento_Remoto.robot">
+<test id="s1-t1" name="Solicitar Fiscalização por Sensoriamento Remoto Tipo de Resolução BACEN" line="38">
+<kw name="Login no Farm" owner="resource">
+<kw name="Abrir Browser" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-12T17:12:16.247821" level="INFO">Opening browser 'Edge' to base url 'https://dev-farmcheck.brainag.app/login'.</msg>
+<msg time="2025-06-12T17:13:28.643252" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-06-12T17:13:28.643687" level="FAIL">SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist
+Stacktrace:
+0   msedgedriver                        0x000000010258c854 msedgedriver + 5474388
+1   msedgedriver                        0x000000010258473c msedgedriver + 5441340
+2   msedgedriver                        0x000000010209901c msedgedriver + 282652
+3   msedgedriver                        0x00000001020d26c4 msedgedriver + 517828
+4   msedgedriver                        0x00000001020cd408 msedgedriver + 496648
+5   msedgedriver                        0x00000001020cb704 msedgedriver + 489220
+6   msedgedriver                        0x000000010210f5bc msedgedriver + 767420
+7   msedgedriver                        0x000000010210ea48 msedgedriver + 764488
+8   msedgedriver                        0x00000001020d65a4 msedgedriver + 533924
+9   msedgedriver                        0x000000010254da70 msedgedriver + 5216880
+10  msedgedriver                        0x000000010255162c msedgedriver + 5232172
+11  msedgedriver                        0x000000010252c480 msedgedriver + 5080192
+12  msedgedriver                        0x0000000102551eac msedgedriver + 5234348
+13  msedgedriver                        0x000000010251dc98 msedgedriver + 5020824
+14  msedgedriver                        0x00000001025730c4 msedgedriver + 5370052
+15  msedgedriver                        0x00000001025731f8 msedgedriver + 5370360
+16  msedgedriver                        0x0000000102584338 msedgedriver + 5440312
+17  libsystem_pthread.dylib             0x00000001911aef94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x00000001911a9d34 thread_start + 8
+</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-06-12T17:12:16.247625" elapsed="72.473941">SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist
+Stacktrace:
+0   msedgedriver                        0x000000010258c854 msedgedriver + 5474388
+1   msedgedriver                        0x000000010258473c msedgedriver + 5441340
+2   msedgedriver                        0x000000010209901c msedgedriver + 282652
+3   msedgedriver                        0x00000001020d26c4 msedgedriver + 517828
+4   msedgedriver                        0x00000001020cd408 msedgedriver + 496648
+5   msedgedriver                        0x00000001020cb704 msedgedriver + 489220
+6   msedgedriver                        0x000000010210f5bc msedgedriver + 767420
+7   msedgedriver                        0x000000010210ea48 msedgedriver + 764488
+8   msedgedriver                        0x00000001020d65a4 msedgedriver + 533924
+9   msedgedriver                        0x000000010254da70 msedgedriver + 5216880
+10  msedgedriver                        0x000000010255162c msedgedriver + 5232172
+11  msedgedriver                        0x000000010252c480 msedgedriver + 5080192
+12  msedgedriver                        0x0000000102551eac msedgedriver + 5234348
+13  msedgedriver                        0x000000010251dc98 msedgedriver + 5020824
+14  msedgedriver                        0x00000001025730c4 msedgedriver + 5370052
+15  msedgedriver                        0x00000001025731f8 msedgedriver + 5370360
+16  msedgedriver                        0x0000000102584338 msedgedriver + 5440312
+17  libsystem_pthread.dylib             0x00000001911aef94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x00000001911a9d34 thread_start + 8
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.721942" elapsed="0.000082"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<status status="FAIL" start="2025-06-12T17:12:16.247037" elapsed="72.475121">SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist
+Stacktrace:
+0   msedgedriver                        0x000000010258c854 msedgedriver + 5474388
+1   msedgedriver                        0x000000010258473c msedgedriver + 5441340
+2   msedgedriver                        0x000000010209901c msedgedriver + 282652
+3   msedgedriver                        0x00000001020d26c4 msedgedriver + 517828
+4   msedgedriver                        0x00000001020cd408 msedgedriver + 496648
+5   msedgedriver                        0x00000001020cb704 msedgedriver + 489220
+6   msedgedriver                        0x000000010210f5bc msedgedriver + 767420
+7   msedgedriver                        0x000000010210ea48 msedgedriver + 764488
+8   msedgedriver                        0x00000001020d65a4 msedgedriver + 533924
+9   msedgedriver                        0x000000010254da70 msedgedriver + 5216880
+10  msedgedriver                        0x000000010255162c msedgedriver + 5232172
+11  msedgedriver                        0x000000010252c480 msedgedriver + 5080192
+12  msedgedriver                        0x0000000102551eac msedgedriver + 5234348
+13  msedgedriver                        0x000000010251dc98 msedgedriver + 5020824
+14  msedgedriver                        0x00000001025730c4 msedgedriver + 5370052
+15  msedgedriver                        0x00000001025731f8 msedgedriver + 5370360
+16  msedgedriver                        0x0000000102584338 msedgedriver + 5440312
+17  libsystem_pthread.dylib             0x00000001911aef94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x00000001911a9d34 thread_start + 8
+</status>
+</kw>
+<kw name="Titulo deve ser" owner="resource">
+<arg>${TITLE}</arg>
+<status status="NOT RUN" start="2025-06-12T17:13:28.722333" elapsed="0.000060"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:auth_username</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.722482" elapsed="0.000073"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:auth_username</arg>
+<arg>${USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.722844" elapsed="0.000098"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:auth_password</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.723038" elapsed="0.000050"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>id:auth_password</arg>
+<arg>${PASS}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.723165" elapsed="0.000049"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.723292" elapsed="0.000047"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.723414" elapsed="0.000069"/>
+</kw>
+<status status="FAIL" start="2025-06-12T17:12:16.246794" elapsed="72.476822">SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist
+Stacktrace:
+0   msedgedriver                        0x000000010258c854 msedgedriver + 5474388
+1   msedgedriver                        0x000000010258473c msedgedriver + 5441340
+2   msedgedriver                        0x000000010209901c msedgedriver + 282652
+3   msedgedriver                        0x00000001020d26c4 msedgedriver + 517828
+4   msedgedriver                        0x00000001020cd408 msedgedriver + 496648
+5   msedgedriver                        0x00000001020cb704 msedgedriver + 489220
+6   msedgedriver                        0x000000010210f5bc msedgedriver + 767420
+7   msedgedriver                        0x000000010210ea48 msedgedriver + 764488
+8   msedgedriver                        0x00000001020d65a4 msedgedriver + 533924
+9   msedgedriver                        0x000000010254da70 msedgedriver + 5216880
+10  msedgedriver                        0x000000010255162c msedgedriver + 5232172
+11  msedgedriver                        0x000000010252c480 msedgedriver + 5080192
+12  msedgedriver                        0x0000000102551eac msedgedriver + 5234348
+13  msedgedriver                        0x000000010251dc98 msedgedriver + 5020824
+14  msedgedriver                        0x00000001025730c4 msedgedriver + 5370052
+15  msedgedriver                        0x00000001025731f8 msedgedriver + 5370360
+16  msedgedriver                        0x0000000102584338 msedgedriver + 5440312
+17  libsystem_pthread.dylib             0x00000001911aef94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x00000001911a9d34 thread_start + 8
+</status>
+</kw>
+<kw name="Acessar modulo AgroReport" owner="resource">
+<status status="NOT RUN" start="2025-06-12T17:13:28.724124" elapsed="0.000084"/>
+</kw>
+<kw name="Selecionar card" owner="resource">
+<arg>Fiscalização por Sensoriamento Remoto</arg>
+<status status="NOT RUN" start="2025-06-12T17:13:28.724461" elapsed="0.000059"/>
+</kw>
+<kw name="Selecionar Proprietário" owner="resource">
+<arg>126</arg>
+<status status="NOT RUN" start="2025-06-12T17:13:28.724871" elapsed="0.000078"/>
+</kw>
+<kw name="Selecionar Propriedade" owner="resource">
+<status status="NOT RUN" start="2025-06-12T17:13:28.725092" elapsed="0.000054"/>
+</kw>
+<kw name="Selecionar BACEN" owner="resource">
+<arg>517501211</arg>
+<status status="NOT RUN" start="2025-06-12T17:13:28.725295" elapsed="0.000057"/>
+</kw>
+<kw name="Preenche Responsável pela Instituição" owner="resource">
+<arg>Luiz</arg>
+<status status="NOT RUN" start="2025-06-12T17:13:28.725496" elapsed="0.000152"/>
+</kw>
+<kw name="Selecionar Safra Financiada" owner="resource">
+<arg>1ª Safra 2024/2025</arg>
+<doc>Seleciona a opção da combo "Safra financiada" pelo valor informado, somente se ainda não estiver preenchido.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.725774" elapsed="0.000057"/>
+</kw>
+<kw name="Selecionar Cultura Financiada" owner="resource">
+<arg>Soja</arg>
+<doc>Seleciona a opção "Cultura financiada" somente se o campo não estiver preenchido.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.725955" elapsed="0.000056"/>
+</kw>
+<kw name="Preencher Área Total Financiada" owner="resource">
+<arg>150.0</arg>
+<doc>Verifica se o campo "Área total financiada (ha)" está preenchido e, caso não esteja, insere o valor informado via parâmetro.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.726151" elapsed="0.000065"/>
+</kw>
+<kw name="Preencher Produção Esperada" owner="resource">
+<arg>5</arg>
+<doc>Verifica se o campo "Produção esperada (ton)" está preenchido; caso não esteja, preenche com o valor informado.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.726338" elapsed="0.000051"/>
+</kw>
+<kw name="Preencher Tipos de Solo" owner="resource">
+<arg>Arenoso</arg>
+<doc>Verifica se o campo "Tipos de solo" está preenchido e, caso não esteja, insere o valor informado.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.726505" elapsed="0.000050"/>
+</kw>
+<kw name="Preencher Grupos de Cultura" owner="resource">
+<arg>Grupo I</arg>
+<doc>Verifica se o campo "Grupos de cultura" está preenchido e, caso não esteja, insere o valor informado.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.726660" elapsed="0.000050"/>
+</kw>
+<kw name="Selecionar Data do Plantio Fiscalização" owner="resource">
+<arg>22/05/2020</arg>
+<doc>Seleciona a data no calendário "Date de plantio" apenas se o campo estiver vazio.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.726873" elapsed="0.000057"/>
+</kw>
+<kw name="Selecionar Data de Colheita" owner="resource">
+<arg>02/12/2020</arg>
+<doc>Seleciona a data no calendário "Data de colheita" apenas se o campo estiver vazio.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.727036" elapsed="0.000054"/>
+</kw>
+<kw name="Selecionar Vencimento do Contrato" owner="resource">
+<arg>01/12/2024</arg>
+<doc>Seleciona a data no calendário "Vencimento do contrato" apenas se o campo estiver vazio.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.727403" elapsed="0.000169"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.727779" elapsed="0.000092"/>
+</kw>
+<kw name="Marcar Checkbox Assinar Relatorios Com Modal" owner="resource">
+<doc>Marca o checkbox "Assinar relatórios" e, se aparecer o modal, clica em "Cancel" ou "OK" conforme o parâmetro.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.728111" elapsed="0.000074"/>
+</kw>
+<kw name="Tratar Modal Assinatura Relatorio" owner="resource">
+<arg>Ok</arg>
+<doc>Se o modal de assinatura aparecer, clica em OK ou Cancel conforme o parâmetro. Não falha se o modal não aparecer.</doc>
+<status status="NOT RUN" start="2025-06-12T17:13:28.728449" elapsed="0.000074"/>
+</kw>
+<kw name="Clicar no botão Solicitar Relatório" owner="resource">
+<status status="NOT RUN" start="2025-06-12T17:13:28.728644" elapsed="0.000048"/>
+</kw>
+<kw name="Clicar Botão do Modal" owner="resource">
+<arg>OK</arg>
+<status status="NOT RUN" start="2025-06-12T17:13:28.728797" elapsed="0.000052"/>
+</kw>
+<kw name="Mensagem do front" owner="resource">
+<arg>Relatório solicitado com sucesso</arg>
+<status status="NOT RUN" start="2025-06-12T17:13:28.728947" elapsed="0.000049"/>
+</kw>
+<kw name="Fechar Browser" owner="resource">
+<status status="NOT RUN" start="2025-06-12T17:13:28.729091" elapsed="0.000042"/>
+</kw>
+<doc>Caso de teste para Solicitar Fiscalização por Sensoriamento Remoto</doc>
+<tag>automacao</tag>
+<status status="FAIL" start="2025-06-12T17:12:16.246196" elapsed="72.483091">SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist
+Stacktrace:
+0   msedgedriver                        0x000000010258c854 msedgedriver + 5474388
+1   msedgedriver                        0x000000010258473c msedgedriver + 5441340
+2   msedgedriver                        0x000000010209901c msedgedriver + 282652
+3   msedgedriver                        0x00000001020d26c4 msedgedriver + 517828
+4   msedgedriver                        0x00000001020cd408 msedgedriver + 496648
+5   msedgedriver                        0x00000001020cb704 msedgedriver + 489220
+6   msedgedriver                        0x000000010210f5bc msedgedriver + 767420
+7   msedgedriver                        0x000000010210ea48 msedgedriver + 764488
+8   msedgedriver                        0x00000001020d65a4 msedgedriver + 533924
+9   msedgedriver                        0x000000010254da70 msedgedriver + 5216880
+10  msedgedriver                        0x000000010255162c msedgedriver + 5232172
+11  msedgedriver                        0x000000010252c480 msedgedriver + 5080192
+12  msedgedriver                        0x0000000102551eac msedgedriver + 5234348
+13  msedgedriver                        0x000000010251dc98 msedgedriver + 5020824
+14  msedgedriver                        0x00000001025730c4 msedgedriver + 5370052
+15  msedgedriver                        0x00000001025731f8 msedgedriver + 5370360
+16  msedgedriver                        0x0000000102584338 msedgedriver + 5440312
+17  libsystem_pthread.dylib             0x00000001911aef94 _pthread_start + 136
+18  libsystem_pthread.dylib             0x00000001911a9d34 thread_start + 8
+</status>
+</test>
+<doc>This is the first Robot Framework test suite.</doc>
+<status status="FAIL" start="2025-06-12T17:12:15.971297" elapsed="72.758585"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">automacao</stat>
+</tag>
+<suite>
+<stat name="Fiscalização por Sensoriamento Remoto" id="s1" pass="0" fail="1" skip="0">Fiscalização por Sensoriamento Remoto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

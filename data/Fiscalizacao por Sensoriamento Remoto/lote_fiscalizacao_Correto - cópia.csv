@@ -1,0 +1,32 @@
+documento_produtor;nome_produtor;car;incra;geojson;nome_propriedade;instituicao_financeira;refbacen;cultura;safra;area_financiada_ha;volume_contratado;municipios_empreendimento;grupo_cultivar;tipo_solo;unidade_contrato;plantio_informado;colheita_informada
+10645075000183;MARIA SANTOS GOMES;GO-2345678-E22FF9A4A75344D3994CB002B90B6686;;{
+  ""type"": ""MultiPolygon"",
+  ""coordinates"": [
+    [
+      [
+        [
+          -51.83531577514853,
+          -21.82407360011382
+        ],
+        [
+          -51.834392445954634,
+          -21.83291312767019
+        ],
+        [
+          -51.838367298222735,
+          -21.82954035303059
+        ],
+        [
+          -51.839130160444334,
+          -21.82425363300034
+        ],
+        [
+          -51.83531577514853,
+          -21.82407360011382
+        ]
+      ]
+    ]
+  ]
+};FAZENDA DOS DADOS;Minha Instituição Financeiro;12345678911;SOJA;2023/2024;100;1000;GOIANIA (GO);GROUP I;AD1;TONS;20/10/2023;20/05/2024
+CPF ou CNPJ (com ou sem pontuação);Nome do Produtor;Código do CAR (Opcional para recuperar geometria);Código SIGEF ou SNCI (Opcional para recuperar geometria);Geometria em WKT ou GEOJson (caso passe CAR ou INCRA esse campo não é necessário);Nome da Propriedade;Nome da minha instituição;Numero do seu contrato;Cultura plantada (SOJA, MILHO, ALGODÃO, ARROZ ou TRIGO);Anos da Safra (20xx-2xx);Número de hectares da área que foi financiada;Número estimado de rendimento da colheita;Municípios da área com estado junto entre parênteses (não encurtar nome do município);"Grupos de cultivo (""GROUP I”|”GROUP II”|”GROUP III”|""GROUP IV”|”GROUP V”|”PERENNIAL”)";Para soja a partir de 2023/2024: em seis classes de acordo com água disponível do solo (AD): AD1, AD2, AD3, AD4, AD5 ou AD6. Para soja antes da safra 2023/2024 e outras culturas qualquer safra: em três categorias quanto à capacidade de retenção da água: ARENOSOS, MEDIA, ARGILOSO.;Unidade de produção do contrato (“TONS”|”KG”|”SACKS 60KG”);Data de plantio no formado (dia-mes-ano ou dia/mes/ano);Data de colheita estimada no formado (dia-mes-ano ou dia/mes/ano)
+Opcional;Opcional;Opcional;Opcional;Opcional;Obrigatório;Opcional;Opcional;Obrigatório;Obrigatório;Obrigatório;Opcional (Recomendado para calcular ZARC);Obrigatório;Opcional (Recomendado para calcular ZARC);Opcional (Recomendado para calcular ZARC);Opcional (Recomendado para calcular ZARC);Opcional (Recomendado para calcular ZARC);Opcional (Recomendado para calcular ZARC)
