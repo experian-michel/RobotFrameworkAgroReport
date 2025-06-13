@@ -26,3 +26,5 @@ JavaScript warning: https://dev-farmcheck.brainag.app/prefs_se.js, line 1822: WE
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: https://static.zdassets.com/web_widget/messenger/latest/web-widget-main-c6569be.js, line 2: SecurityError: The operation is insecure.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://static.zdassets.com/web_widget/messenger/latest/web-widget-8173-c6569be.js, line 1: TypeError: m.current.contentDocument is null
+JavaScript error: https://static.zdassets.com/web_widget/messenger/latest/web-widget-6322-c6569be.js, line 2: NotFoundError: Node.removeChild: The node to be removed is not a child of this node
