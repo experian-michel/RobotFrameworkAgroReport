@@ -30,7 +30,7 @@ Solicitar Fiscalização por Sensoriamento Remoto Tipo de Resolução Padrão
     Sleep    1s
     Marcar Checkbox Assinar Relatorios Com Modal    
     Tratar Modal Assinatura Relatorio    Ok
-    Clicar no botão Solicitar Relatório_
+    Clicar no botão Solicitar Relatório
     Clicar Botão do Modal    OK
     Mensagem do front    Relatório solicitado com sucesso
     Fechar Browser
@@ -73,7 +73,7 @@ Solicitar Importação do arquivo .csv Fiscalização por Sensoriamento Remoto T
     Selecionar csv    ${CSV_FSR_PD}
     Sleep    3s
     Fechar Browser
-Solicitar Importação do arquivo .csv Fiscalização por Sensoriamento Remoto Tipo de Resolução BACEN
+Solicitar Importação do arquivo .csv Fiscalização por Sensoriamento Remoto Tipo de Resolução BACEN 09 digitos
     [Documentation]    Caso de teste para Solicitar Fiscalização por Sensoriamento Remoto com Tipo de Resolução BACEN 09 digitos
     [Tags]    automacao
     Login no Farm
@@ -84,7 +84,7 @@ Solicitar Importação do arquivo .csv Fiscalização por Sensoriamento Remoto T
     Selecionar csv    ${CSV_FSR_BC_09}
     Sleep    3s
     Fechar Browser
-Solicitar Importação do arquivo .csv Fiscalização por Sensoriamento Remoto Tipo de Resolução BACEN
+Solicitar Importação do arquivo .csv Fiscalização por Sensoriamento Remoto Tipo de Resolução BACEN 11 digitos
     [Documentation]    Caso de teste para Solicitar Fiscalização por Sensoriamento Remoto com Tipo de Resolução BACEN 11 digitos
     [Tags]    automacao
     Login no Farm
@@ -101,9 +101,6 @@ Solicitar Fiscalização por Sensoriamento Remoto sem CPF
     Login no Farm
     Acessar modulo AgroReport
     Selecionar card     Fiscalização por Sensoriamento Remoto
-    Selecionar Proprietário    126 
-    Selecionar Propriedade
-    Selecionar Tipo de Resolução    Padrão
- 
-
-
+    Clicar no botão Solicitar Relatório
+    Mensagem do front    Relatórios não solicitados
+    Fechar Browser

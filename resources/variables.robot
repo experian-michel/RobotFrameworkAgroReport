@@ -8,6 +8,7 @@ ${TITLE_A}          Análise Detalhada de Desmatamento
 ${QA}               QA
 ${TEXTO_BASE}       TESTE AUTOMATIZADO
 ${PATH}             /Users/C12538Q/Documents/RobotFrameworkAgroReport/data/
+${CSV_DSC}          ${PATH}Diagnostico de Carteira Soja em Desmatamento/lote_soja_area_desmatada_car_soja.csv
 ${CSV_ADD}          ${PATH}Analise Detalhada de Desmatamento/lote_analise_detalhada_desmatamento.csv
 ${CSV_ADD_EUDR}     ${PATH}Analise Detalhada de Desmatamento - EUDR/lote_protocolo_eudr.csv
 ${CSV_CS}           ${PATH}Conformidade Socioambiental/socioambiental.csv
