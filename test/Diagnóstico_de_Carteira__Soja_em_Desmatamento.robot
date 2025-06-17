@@ -93,3 +93,12 @@ Solicitar Diagnóstico de Carteira | Soja em Desmatamento. sem Car
     Clicar Solicitar relatório
     Mensagem do front    Selecione pelo menos uma propriedade
     Fechar Browser
+
+Solicitar Diagnóstico de Carteira | Soja em Desmatamento CSV
+    [Documentation]    Caso de teste para Solicitar Diagnóstico de Carteira | Soja em Desmatamento arquivo csv
+    [Tags]    automacao
+    Login no Farm
+    Acessar modulo AgroReport
+    Selecionar card     Diagnóstico de Carteira | Soja em Desmatamento.
+    Selecionar Data do Corte Diagnóstico de Carteira    01/08/2024
+    
