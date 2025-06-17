@@ -2,8 +2,8 @@
 ${URL}              https://dev-farmcheck.brainag.app/login
 ${BROWSER}          firefox
 ${TITLE}            Brain - Área Restrita
-${USER}             
-${PASS}             
+${USER}             michel.viana@br.experian.com
+${PASS}             Esc@19734682
 ${TITLE_A}          Análise Detalhada de Desmatamento
 ${QA}               QA
 ${TEXTO_BASE}       TESTE AUTOMATIZADO
@@ -25,6 +25,6 @@ ${CSV_DC_CAR}       ${PATH}Diagnostico de Carteira/diagnostico_de_carteira_CAR.c
 ${CSV_PMFG}         ${PATH}Protocolo de Monitoramento de Fornecedores de Gado/lote_protocolo_socioambiental_boi_na_linha.csv
 ${CSV_RS}           ${PATH}Relatorio de Sinistro/lote_sinistro.csv
 ${CSV_VIR}          ${PATH}Valoracao de Imoveis Rurais/valoracao_imoveis.csv
-${CSV_FSR_PD}       ${PATH}Fiscalizacao por Sensoriamento Remoto/
-${CSV_FSR_BC_09}    ${PATH}Fiscalizacao por Sensoriamento Remoto/
-${CSV_FSR_BC_11}    ${PATH}Fiscalizacao por Sensoriamento Remoto/
+${CSV_FSR_PD}       ${PATH}Fiscalizacao por Sensoriamento Remoto/lote_fiscalizacao_PADRAO_.csv
+${CSV_FSR_BC_09}    ${PATH}Fiscalizacao por Sensoriamento Remoto/lote_fiscalizacao_BACEN_09_digitos.csv
+${CSV_FSR_BC_11}    ${PATH}Fiscalizacao por Sensoriamento Remoto/lote_fiscalizacao_BACEN_11_digitos.csv

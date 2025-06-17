@@ -1,5 +1,5 @@
-1750162231601	geckodriver	INFO	Listening on 127.0.0.1:56891
-1750162231621	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Applications/Firefox. ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/bm/hz2c5r751_ld38q9x2hkllp00000gs/T/rust_mozprofile5ni4sQ"
+1750162259583	geckodriver	INFO	Listening on 127.0.0.1:57143
+1750162259659	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Applications/Firefox. ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/bm/hz2c5r751_ld38q9x2hkllp00000gs/T/rust_mozprofilenBqEgP"
 console.error: Enterprise Policies: 
   Invalid parameters specified for Proxy.
 console.warn: services.settings: Ignoring preference override of remote settings server
@@ -14,22 +14,19 @@ console.error: Policies:
   Unable to find certificate - /Library/Application Support/Mozilla/Certificates/ECS-ICAExperian Consumer Services EXPN Enterprise Certificate Authority.cer
 console.error: Policies: 
   Unable to find certificate - /Library/Application Support/Mozilla/Certificates/ECS-ROOTExperian Consumer Services Root Certificate Authority.cer
-1750162232396	Marionette	INFO	Marionette enabled
-1750162232854	Marionette	INFO	Listening on port 56903
-WebDriver BiDi listening on ws://127.0.0.1:56892
+1750162260165	Marionette	INFO	Marionette enabled
+1750162260545	Marionette	INFO	Listening on port 57156
+WebDriver BiDi listening on ws://127.0.0.1:57144
 JavaScript error: resource:///modules/policies/Policies.sys.mjs, line 1355: TypeError: cannot use 'in' operator to search for "installation_mod..." in "87677a2c52b84ad3..."
-Read port: 56903
-1750162232920	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Read port: 57156
+1750162260706	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
 JavaScript warning: https://cdn.pendo.io/agent/static/4c6dab7e-9c4c-4ded-47a3-96832b0055ac/pendo.js, line 10: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript warning: https://dev-farmcheck.brainag.app/prefs_se.js, line 1822: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: uncaught exception: Object
-JavaScript error: , line 0: uncaught exception: Object
-JavaScript error: https://dev-farmcheck.brainag.app/static/js/main.35e51b3a.chunk.js, line 1: TypeError: e.t0.response is undefined
-JavaScript error: https://static.zdassets.com/web_widget/messenger/latest/web-widget-main-c6569be.js, line 2: SecurityError: The operation is insecure.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-1750162258693	Marionette	INFO	Stopped listening on port 56903
+1750162285699	Marionette	INFO	Stopped listening on port 57156
 console.error: "Failed to fetch https://ads.mozilla.org/v1/delete_user:" "NetworkError when attempting to fetch resource."
 console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
 console.error: services.settings: 

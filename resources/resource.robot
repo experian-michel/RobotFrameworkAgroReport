@@ -717,26 +717,43 @@ Selecionar Data do Plantio Fiscalização Padrao
     [Arguments]    ${data_br}
     [Documentation]    Seleciona a data no calendário "Date de plantio" do Fiscalização Padrão.
 
-    # Converte a data para o formato YYYY-MM-DD
-    #${data}=    Convert Date    ${data_br}    result_format=%Y-%m-%d    date_format=%d/%m/%Y
+    # Converte a data para o formato necessário
+    ${ano}=    Convert Date    ${data_br}    result_format=%Y    date_format=%d/%m/%Y
+    ${mes_num}=    Convert Date    ${data_br}    result_format=%m    date_format=%d/%m/%Y
+    ${mes}=    Convert To Integer    ${mes_num}
+    ${dia_num}=    Convert Date    ${data_br}    result_format=%d    date_format=%d/%m/%Y
+    ${dia}=    Convert To Integer    ${dia_num}
+    ${data_iso}=    Convert Date    ${data_br}    result_format=%Y-%m-%d    date_format=%d/%m/%Y
 
-    # Clica no input para abrir o calendário
+    # Abre o calendário
     Click Element    xpath=//label[normalize-space(text())="Date de plantio"]/following-sibling::div//input[@placeholder="Selecione"]
-
-    # Aguarda o calendário abrir
     Wait Until Element Is Visible    //div[contains(@class,"ant-picker-panel")]    timeout=10s
 
-    # Aguarda o dia desejado estar visível e clica nele
-    Wait Until Element Is Visible    //td[@title="${data_br}"]    timeout=10s
-    Click Element    //td[@title="${data_br}"]
+    # Navega até o ano correto
+    FOR    ${i}    IN RANGE    24
+        ${ano_atual}=    Get Text    //button[contains(@class,"ant-picker-year-btn")]
+        Exit For Loop If    '${ano_atual}' == '${ano}'
+        ${ano_atual_int}=    Convert To Integer    ${ano_atual}
+        ${ano_int}=    Convert To Integer    ${ano}
+        Run Keyword If    ${ano_int} > ${ano_atual_int}    Click Element    //button[contains(@class,"ant-picker-header-next-btn")]
+        Run Keyword If    ${ano_int} < ${ano_atual_int}    Click Element    //button[contains(@class,"ant-picker-header-prev-btn")]
+        Sleep    0.2
+    END
 
-    # Aguarda o calendário fechar
+    # Navega até o mês correto
+    FOR    ${i}    IN RANGE    12
+        ${mes_atual}=    Get Text    //button[contains(@class,"ant-picker-month-btn")]
+        ${mes_atual_num}=    Evaluate    {'Jan':1, 'January':1,'Feb':2, 'February':2,'Mar':3, 'March':3,'Apr':4, 'April':4,'May':5,'Jun':6, 'June':6,'Jul':7, 'July':7,'Aug':8, 'August':8,'Sep':9, 'September':9,'Oct':10, 'October':10,'Nov':11, 'November':11,'Dec':12, 'December':12}['${mes_atual}']
+        Exit For Loop If    ${mes_atual_num} == ${mes}
+        Run Keyword If    ${mes} > ${mes_atual_num}    Click Element    //button[contains(@class,"ant-picker-header-next-btn")]
+        Run Keyword If    ${mes} < ${mes_atual_num}    Click Element    //button[contains(@class,"ant-picker-header-prev-btn")]
+        Sleep    0.2
+    END
+
+    # Agora clica no dia
+    Wait Until Element Is Visible    //td[@title="${data_iso}"]    timeout=10s
+    Click Element    //td[@title="${data_iso}"]
     Wait Until Element Does Not Contain    //body    ant-picker-panel
-
-    # Valida se o campo foi preenchido corretamente
-   # ${data_br_out}=    Convert Date    ${data}    result_format=%d/%m/%Y
-    #Element Attribute Value Should Be    xpath=//label[normalize-space(text())="Date de plantio"]/following-sibling::div//input[@placeholder="Selecione"]    value    ${data_br_out}
-
 
 
 
@@ -779,17 +796,60 @@ Selecionar Data de Colheita
 
 Preencher Data de Colheita Calendario
     [Arguments]    ${data_br}
-    # Converte para o formato YYYY-MM-DD
-    ${data}=    Convert Date    ${data_br}    result_format=%Y-%m-%d    date_format=%d/%m/%Y
-    # Clica no input para abrir o calendário
-    Click Element    xpath=//label[normalize-space(text())="Data de colheita"]/following-sibling::div//input[@placeholder="Selecione"]
-    Wait Until Element Is Visible    //div[contains(@class,"ant-picker-panel")]
-    # Aguarda e clica no dia correto (ajuste, se necessário, para navegação por mês/ano)
-    Wait Until Element Is Visible    //td[@title="${data}"]
-    Click Element    //td[@title="${data}"]
-    Wait Until Element Does Not Contain    //body    ant-picker-panel
-    ${data_br_out}=    Convert Date    ${data}    result_format=%d/%m/%Y
-    Element Attribute Value Should Be    xpath=//label[normalize-space(text())="Data de colheita"]/following-sibling::div//input[@placeholder="Selecione"]    value    ${data_br_out}
+    # Garante que o input está visível e clica
+    Wait Until Element Is Visible    xpath=//label[normalize-space(text())="Data de colheita"]/../div[contains(@class,"ant-picker")]//input[@placeholder="Selecione"]    timeout=10s
+    Click Element    xpath=//label[normalize-space(text())="Data de colheita"]/../div[contains(@class,"ant-picker")]//input[@placeholder="Selecione"]
+
+    # Aguarda o dropdown do calendário abrir
+    Wait Until Element Is Visible    //div[contains(@class,"ant-picker-dropdown") and not(contains(@style,"display: none"))]    timeout=10s
+
+    # Aqui segue a lógica para navegar ano/mês e clicar no dia
+    # Exemplo para clicar no dia:
+    ${data_iso}=    Convert Date    ${data_br}    result_format=%Y-%m-%d    date_format=%d/%m/%Y
+    Wait Until Element Is Visible    //td[@title="${data_iso}"]    timeout=10s
+    Click Element    //td[@title="${data_iso}"]
+    Wait Until Element Does Not Contain    //body    ant-picker-dropdown
+
+
+Preencher Data de Colheita Padrao
+    [Arguments]    ${data_br}
+    [Documentation]    Clica no elemento input e insere (cola) o valor passado no parametro.
+    # Localiza o elemento input
+    ${xpath_data_colheita}=    Evaluate    "//label[text()='Data de colheita']/following-sibling::div//input[@placeholder='Selecione']"
+    # Garante que o elemento está visível
+    Wait Until Element Is Visible    ${xpath_data_colheita}    timeout=10s
+    # Clica no elemento input para focar
+    Click Element    ${xpath_data_colheita}
+    # Limpa o campo (opcional, caso já tenha algum valor)
+    Clear Element Text    ${xpath_data_colheita}
+    # Insere o valor no campo
+    Input Text    ${xpath_data_colheita}    ${data_br}
+     # Envia dois tabs
+    Press Key    ${xpath_data_colheita}    \\09
+    Sleep    1s
+    Press Key    ${xpath_data_colheita}    \\09
+
+Selecionar Vencimento do Contrato Padrao  
+     [Arguments]    ${data_br}
+    [Documentation]    Clica no elemento input e insere (cola) o valor passado no parametro.
+    # Localiza o elemento input
+    ${xpath_data_venci_contrato}=    Evaluate    "//label[text()='Vencimento do contrato']/following-sibling::div//input[@placeholder='Selecione']"
+    # Garante que o elemento está visível
+    Wait Until Element Is Visible    ${xpath_data_venci_contrato}    timeout=10s
+    # Clica no elemento input para focar
+    Click Element    ${xpath_data_venci_contrato}
+    # Limpa o campo (opcional, caso já tenha algum valor)
+    Clear Element Text    ${xpath_data_venci_contrato}
+    # Insere o valor no campo
+    Input Text    ${xpath_data_venci_contrato}    ${data_br}
+     # Envia dois tabs
+    Press Key    ${xpath_data_venci_contrato}    \\09
+    Sleep    1s
+    Press Key    ${xpath_data_venci_contrato}    \\09
+
+
+
+
 
 Selecionar Vencimento do Contrato
     [Arguments]    ${data_br}

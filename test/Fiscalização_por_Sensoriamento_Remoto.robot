@@ -23,14 +23,14 @@ Solicitar Fiscalização por Sensoriamento Remoto Tipo de Resolução Padrão
     Preencher Produção Esperada    5
     Preenchimento Tipos de Solo Fiscalização    Arenoso
     Preencher Grupos de Cultura    Grupo I
-    Selecionar Data do Plantio Fiscalização Padrao  22/05/2020
-    Selecionar Data de Colheita    02/12/2020
-    Selecionar Vencimento do Contrato    01/12/2024
+    Selecionar Data do Plantio Fiscalização Padrao  22/05/2025
+    Preencher Data de Colheita Padrao    02/12/2020
+    Sleep    1s
+    Selecionar Vencimento do Contrato Padrao   01/12/2024
     Sleep    1s
     Marcar Checkbox Assinar Relatorios Com Modal    
     Tratar Modal Assinatura Relatorio    Ok
     Clicar no botão Solicitar Relatório_
-    # Gerenciar Modal Salvar Geometria BACEN    Não
     Clicar Botão do Modal    OK
     Mensagem do front    Relatório solicitado com sucesso
     Fechar Browser
@@ -84,7 +84,6 @@ Solicitar Importação do arquivo .csv Fiscalização por Sensoriamento Remoto T
     Selecionar csv    ${CSV_FSR_BC_09}
     Sleep    3s
     Fechar Browser
-
 Solicitar Importação do arquivo .csv Fiscalização por Sensoriamento Remoto Tipo de Resolução BACEN
     [Documentation]    Caso de teste para Solicitar Fiscalização por Sensoriamento Remoto com Tipo de Resolução BACEN 11 digitos
     [Tags]    automacao
