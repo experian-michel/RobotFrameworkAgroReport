@@ -1,0 +1,17 @@
+# Ambiente virtual Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Resultados e relatórios de testes
+results/
+*.log
+*.db
+*.sqlite
+
+# Arquivos do sistema
+.DS_Store
+
+# Configurações do VS Code (opcional)
+.vscode/

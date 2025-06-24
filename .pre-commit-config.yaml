@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/MarketSquare/robotframework-robocop
+    rev: v3.0.0
+    hooks:
+      - id: robocop
+  - repo: https://github.com/MarketSquare/robotframework-tidy
+    rev: v4.6.0
+    hooks:
+      - id: robotidy

@@ -2,8 +2,8 @@
 ${URL}              https://dev-farmcheck.brainag.app/login
 ${BROWSER}          firefox
 ${TITLE}            Brain - Área Restrita
-${USER}             michel.viana@br.experian.com
-${PASS}             Esc@19734682
+${USER}             %{USER}
+${PASS}             %{PASS}
 ${TITLE_A}          Análise Detalhada de Desmatamento
 ${QA}               QA
 ${TEXTO_BASE}       TESTE AUTOMATIZADO
